@@ -11,3 +11,7 @@
 ## Cloudwatch Utility scripts 
 1. [Get cloudwatch log and dump in text file](https://github.com/asraful/aws-in-action/blob/main/code-snippets/aws_cloudwatch_log_boto3/aws_pull_cloudwatch_log.py)
 
+## S3 Bucket utility 
+1. [Read from S3 bucket](https://github.com/asraful/aws-in-action/blob/main/code-snippets/aws_S3_bucket_boto3/S3_read_from_bucket.py)
+1. [Write to S3 bucket](https://github.com/asraful/aws-in-action/blob/main/code-snippets/aws_S3_bucket_boto3/S3_write_to_bucket.py)
+
