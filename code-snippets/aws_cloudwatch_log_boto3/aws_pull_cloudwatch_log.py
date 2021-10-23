@@ -1,4 +1,11 @@
-#Inspired by : https://gist.github.com/eldondevcg/fffff4b7909351b19a53
+
+#------------------------------------------------------------------------------
+# https://github.com/asraful
+# aws_pull_cloudwatch_log.py
+# Inspired by : https://gist.github.com/eldondevcg/fffff4b7909351b19a53
+#------------------------------------------------------------------------------
+
+
 
 import boto3, json, time
 
