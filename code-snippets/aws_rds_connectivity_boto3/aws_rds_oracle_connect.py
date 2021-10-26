@@ -28,22 +28,17 @@ def connect_oracle(oracle_arn,oracle_host,oracle_port,oracle_db):
 
     return conn
 
-def read_config():
-    config = configparser.ConfigParser()
-    config_file_path = '/home/ubuntu/efs/rml_ami_tests/scripts/config.txt'
-    config.read(config_file_path)
-    return config
+
 
 def test_oracle_connect():
-    config = read_config()
 
-    run_rds_test_scripts = config.get('rds_config', 'run_rds_test_scripts')
-
-    oracle_arn = config.get('oracle', 'oracle_arn')
-    oracle_host = config.get('oracle', 'oracle_host')
-    oracle_port = config.get('oracle', 'oracle_port')
-    oracle_db = config.get('oracle', 'oracle_db')
-
+    #change the variable value as required 
+    oracle_arn = 'oracle_arn'
+    oracle_host = 'oracle_host'
+    oracle_port = 'oracle_port'
+    oracle_db = 'oracle_db'
+    
+    run_rds_test_scripts = 'true'
 
     if run_rds_test_scripts == 'true':
         conn = connect_oracle(oracle_arn,oracle_host,oracle_port,oracle_db)
